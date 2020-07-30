@@ -1,0 +1,543 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "hey", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Good bye", "I am Leaving", "Have a Good day", "bye", "goodbye"],
+         "responses": ["Bye. Hope to see you again soon!", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["thanks", "Thank you", "thanks for your help", "thank you for helping me"],
+         "responses": ["You're welcome!", "Happy to help!", "Anytime!"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call me Cora.", "I'm Cora!", "I'm Cora aka Your Personal Financial Assistant."],
+         "context_set": ""
+        },
+        {"tag": "retirementplans",
+         "patterns": ["i want to retire", "retirement plans", "I am looking into retirement.", "What are the types of retirement plans?", "types of retirement plans"],
+         "responses": ["There are 14 types of retirment plans.\n1. Individual Retirement Arrangement (IRA)\n2. Roth IRA\n3. 401 (k) plan\n4. 403 (b) plan\n5. Savings Incentive March Plans for Employees (SIMPLE IRA Plan)\n6. Simplified Employee Pension (SEP Plan)\n7. Salary Reduction Simplified Employee Pension (SARSEP Plan)\n8. Payroll Deduction IRA\n9. Profit-Sharing Plan\n10. Defined Benefits Plan\n11. Money Purchase Plan\n12. Employee Stock Ownership Plan\n13. Government Plans\n14. 457 Plan\nType in the name of a plan and I can tell you more about it!"],
+         "context_set": ""
+        },
+        {"tag": "ira",
+         "patterns": ["IRA", "Individual Retirement Arrangement", "i want to get an IRA", "IRA plan", "I want to learn more about Individual Retirement Arrangement", "Tell me about Individual Retirement Arrangement","Traditional IRA", "Traditional Individual Retirement Arrangement"],
+         "responses": ["IRAs allow individuals to contribute pre-tax dollars to a retirement account where investments grow tax-deferred until withdrawal during retirement.\nUpon retirement, withdrawals are taxed at the IRA owner's current income tax rate. Capital gains or taxes on dividends are not assessed\nContribution limits exist ($6,000 for both 2019 and 2020 for those under age 50; $7,000 for those 50 and older), and required minimum distributions (RMDs) must begin at age 72."],
+         "context_set": ""
+        },
+        {"tag": "rothira",
+         "patterns": ["Roth IRA", "Roth Individual Retirement Arrangement", "i want to get a Roth IRA", "Roth IRA plan", "I want to learn more about Roth Individual Retirement Arrangement", "Tell me about Roth Individual Retirement Arrangement"],
+         "responses": ["A Roth IRA is a special retirement account where you pay taxes on money going into your account, and then all future withdrawals are tax-free.\nRoth IRAs are best when you think your taxes will be higher in retirement than they are right now.\nYou can't contribute to a Roth IRA if you make too much money.\nIn 2020, the limit for singles is $139,000.\nFor married couples, the limit is $206,000. The amount you can contribute changes periodically.\nIn 2020, the contribution limit is $6,000 a year unless you are over 50—in which case, you can deposit up to $7,000."],
+         "context_set": ""
+        },
+        {"tag": "401k",
+         "patterns": ["401k", "401 k", "401 k plan", "401k plan", "i want to get a 401 k", "i want to get a 401k",  "I want to learn more about 401ks", "I want to learn more about 401 k", "Tell me about 401ks", "Tell me about 401 k"],
+         "responses": ["A 401(k) plan is a company-sponsored retirement account that employees can contribute to.\nEmployers may also make matching contributions.\nThere are two basic types of 401(k)s—traditional and Roth—which differ primarily in how they're taxed.\nIn a traditional 401(k), employee contributions reduce their income taxes for the year they are made, but their withdrawals are taxed.\nWith a Roth, employees make contributions with post-tax income but can make withdrawals tax-free.\nFor 2020, under the CARES Act, withdrawal rules and amounts were relaxed for those affected by COVID-19, and RMDs were suspended."],
+         "context_set": ""
+        },
+        {"tag": "403b",
+         "patterns": ["403b", "403 b", "403 b plan", "403b plan", "i want to get 403 b", "i want to get 403b", "I want to learn more about 403bs", "I want to learn more about 403 b", "Tell me about 403bs", "Tell me about 403 b"],
+         "responses": ["403(b)s resemble 401(k)s, but they serve employees of public schools and tax-exempt organizations rather than private sector workers.\nThe advantages of a 403(b) compared to a 401(k) can include faster vesting of your funds and the ability to make additional catch-up contributions. Investment choices may be more limited with a 403(b), however, and some accounts offer less protection from creditors than 401(k)s."],
+         "context_set": ""
+        },
+        {"tag": "simpleiraplan",
+         "patterns": ["SIMPLE  IRA", "Savings Incentive March Plans for Employees", "i want to get a SIMPLE IRA PLan", "SIMPLE IRA plan", "I want to learn more about Simple Individual Retirement Arrangement", "Tell me about Simple Individual Retirement Arrangement"],
+         "responses": ["A SIMPLE IRA, or Savings Incentive Match Plan for Employees, is a type of tax-deferred retirement savings plan.\nSIMPLE IRAs are easy to set up, and they can be a good option for small businesses.\nThey have some drawbacks, and businesses that can afford to set up other plans might consider it."],
+         "context_set": ""
+        },
+        {"tag": "sepplan",
+         "patterns": ["SEP", "Simplified Employee Pension", "i want to get a SEP plan", "SEP plan", "I want to learn more about SEP plans", "Tell me about SEPs"],
+         "responses": ["A simplified employee pension (SEP or SEP IRA) is a retirement plan that an employer or self-employed individual can establish.\nSEP IRAs are used by small businesses and self-employed individuals to meet their retirement savings needs.\nSEP IRAs often have higher annual contribution limits than standard IRAs and 401(k)s."],
+         "context_set": ""
+        },
+        {"tag": "sarsepplan",
+         "patterns": ["SARSEP Plan", "Salary Reduction Simplified Employee Pension", "i want to get a SARSEP", "SARSEP plan", "I want to learn more about Salary Reduction Simplified Employee Pension", "Tell me about Salary Reduction Simplified Employee Pension"],
+         "responses": ["Salary Reduction Simplified Employee Pension Plan (SARSEP) are no longer issued.\nIt was a type of retirement plan once offered by small companies that allowed employees to make pretax contributions to individual retirement accounts (IRAs) through salary reduction.\nEmployers who established SARSEPs prior to January 1, 1997, can continue to maintain them and new employees of the employers hired after December 31, 1996, can participate in the existing SARSEPs."],
+         "context_set": ""
+        },
+        {"tag": "payrolldeductionira",
+         "patterns": ["Payroll Deduction IRA", "Payroll Deduction Individual Retirement Arrangement", "i want to get a Payroll Deduction IRA", "Payroll Deduction IRA plan", "I want to learn more about Payroll Deduction Individual Retirement Arrangement", "Tell me about Payroll Deduction Individual Retirement Arrangement"],
+         "responses": ["A payroll deduction plan refers to when an employer withholds money from an employee's paycheck for a variety of purposes, but most commonly for benefits.\nPayroll deduction plans may be voluntary or involuntary"],
+         "context_set": ""
+        },
+        {"tag": "profitsharingplan",
+         "patterns": ["Profit-Sharing Plan", "i want to get a Profit-Sharing Plan", "I want to learn more about Profit-Sharing Plans", "Tell me about Profit-Sharing Plans"],
+         "responses": ["A profit-sharing plan gives employees a share in their company’s profits based on its quarterly or annual earnings.\nIt is up to the company to decide how much of its profits it wishes to share. Contributions to a profit-sharing plan are made by the company only; employees cannot make them, too."],
+         "context_set": ""
+        },
+        {"tag": "definedbenefitsplan",
+         "patterns": ["Defined Benefits Plan", "i want to get Defined Benefits Plan", "I want to learn more about Defined Benefits Plans", "Tell me about Defined Benefits Plans"],
+         "responses": ["A defined-benefit plan is an employer-based program that pays benefits based on factors such as length of employment and salary history.\nPensions are defined-benefit plans.\nThe employer, not the employee, is responsible for all of the planning and investment risk of a defined-benefit plan.\nBenefits can be distributed as fixed-monthly payments like an annuity or in one lump-sum payment.\nThe surviving spouse is often entitled to the benefits if the employee passes away."],
+         "context_set": ""
+        },
+        {"tag": "moneypurchaseplan",
+         "patterns": ["Money Purchase Plan", "i want to get a Money Purchase Plan", "I want to learn more about Money Purchase Plans", "Tell me about Money Purchase Plan"],
+         "responses": ["The money purchase pension plan is an annual employer contribution to its employees' retirement savings.\nEmployees don't contribute to their pension plan, but they may have 401(k) plans as well.\nThis is a qualified retirement savings plan, meaning the employee does not pay taxes on the money until it is withdrawn."],
+         "context_set": ""
+        },
+        {"tag": "employeestockownershipplan",
+         "patterns": ["Employee Stock Ownership Plan", "i want to get a Employee Stock Ownership Plan", "I want to learn more about Employee Stock Ownership Plans", "Tell me about Employee Stock Ownership Plans", "ESOP"],
+         "responses": ["An employee stock ownership plan gives workers ownership interest in the company.\nESOP is usually formed to allow employees the opportunity to buy stock in a closely held company to facilitate succession planning.\nESOPs encourage employees to do what's best for shareholders since the employees themselves are shareholders and provide companies with tax benefits, thus incentivizing owners to offer them to employees.\nCompanies typically tie distributions from the plan to vesting."],
+         "context_set": ""
+        },
+        {"tag": "governmentalplan",
+         "patterns": ["Governmental Plan", "i want to get a Government Plan", "I want to learn more about Government Plans", "Tell me about Government Plans"],
+         "responses": ["Under Internal Revenue Code Section 414(d), a governmental plan is an IRC Section 401(a) retirement plan established and maintained for the employees of:\nthe United States or its agency or instrumentality\na state or political subdivision, or its agency or instrumentality\nor an Indian tribal government or its subdivision, or its agency or instrumentality (participants must substantially perform services essential to governmental functions rather than commercial activities.)"],
+         "context_set": ""
+        },
+        {"tag": "457Plan",
+         "patterns": ["457 Plan", "i want to get a 457 Plan", "I want to learn more about 457 Plans", "Tell me about 457 Plans"],
+         "responses": ["457 plans are IRS-sanctioned, tax-advantaged employee retirement plans.\nThey are offered by state, local government and some nonprofit employers.\nParticipants are allowed to contribute up to 100% of their salary, provided it does not exceed the applicable dollar limit for the year.\nAny interest and earnings generated from the plan do not get taxed until the funds are withdrawn."],
+         "context_set": ""
+        },
+        {"tag": "moneytoretire",
+         "patterns": ["How much money do I need to retire?", "money to retire", "amount of money to retire", "retirment plans", "money need to retire"],
+         "responses": ["The amount of money needed for retirement will be different for everybody. The best rule of thumb is to add up expected retirement income – social security, pensions, distributions from individual retirement accounts, investments, etc. – and subtract all expected retirement expenses – housing, utilities, taxes, insurance, food, clothes, etc. – to see how much of this will be needed after retirement. The final answer, of course, will be based on anticipated life expectancy."],
+         "context_set": ""
+        },
+        {"tag": "avgretireage",
+         "patterns": ["What is the average retirement age?", "When does the average American retire?", "What is the average retirement age for Americans?", "average retirement age", "retirement age", "average american retirement age","american retirement age"],
+         "responses": ["Most Americans typically retire between the ages of 62 and 68."],
+         "context_set": ""
+        },
+        {"tag": "selfemployedretirement",
+         "patterns": ["What is the best retirement plan if I'm self-employed?", "self employed retirement plan", "I am self employed. What retirement plan should I choose?", "best retirement plan for self employed people", "I want to learn more about retirement plan for self employed people.", "Tell me about the best retirement plan if I am self employed."],
+         "responses": ["Those who are self-employed can establish a SEP (simplified employee pension plan) IRA. Both unincorporated sole proprietors and incorporated small business owners can establish a SEP IRA."],
+         "context_set": ""
+        },
+        {"tag": "dieretirefund",
+         "patterns": ["What happens to my retirement fund if I die before withdrawing the money?", "die before withdrawing money from retirement fund", "where does money in my retirement fund go if I die before withdrawing the money?"],
+         "responses": ["If you are married, the money in your retirement accounts becomes the property of your spouse unless you've named a non-spousal beneficiary. If you are single and have named a beneficiary, the beneficiary will inherit the accounts. If you are single and have not named a beneficiary, the accounts will become part of your estate."],
+         "context_set": ""
+        },
+        {"tag": "disabledbeforeretireage",
+         "patterns": ["What if I become disabled before retirement age and have to take disability?", "have to take disability before retirement age", "become disabled before retirement age", "disabled before retirement age", "I want to know what happend if I become disabled before retirement age and I have to take disability"],
+         "responses": ["If you are younger than age 59 ½ and need to tap into your retirement accounts, you can do so. While the 10% penalty may be waived, you will still have to claim the distribution as income."],
+         "context_set": ""
+        },
+        {"tag": "teacherreitreplan",
+         "patterns": ["What retirement accounts are best for teachers.", "What retirement plans are best for teachers.", "I am a teacher. What retirement plan is best for me?", "teacher retirement plan", "retirement plan for teachers", "Tell me about the best retirement plan for teachers."],
+         "responses": ["Teachers and public employees often have access to 403(b) and 457 retirement savings accounts. In addition, teachers can always contribute to their own traditional or Roth IRA accounts provided they meet the income and employer-sponsored retirement plan requirements."],
+         "context_set": ""
+        },
+        {"tag": "govempretireplan",
+         "patterns": ["What retirement accounts are best for governemnt workers?", "What retirement plans are best for governemnt workers?", "I am a government employee. What retirement plan is best for me?", "retirement plan for government employee", "gov employee best retirement plan", "best retirement plan for gov employee"],
+         "responses": ["Federal government employees have access to FERS (Federal Employees Retirement System). State and local government employees can usually participate in 403(b) and 457 plans."],
+         "context_set": ""
+        },
+        {"tag": "militaryretireplan",
+         "patterns": ["What retirement accounts are best for those in military.", "What retirement plans are best for those in military.", "I am in the military. What retirement plan is best for me?", "military retirement plan", "retirement plan for military", "Tell me about the best retirement plan for people in military."],
+         "responses": ["Military personnel can contribute to a Thrift Savings Plan (TSP) along with either a traditional or Roth IRA."],
+         "context_set": ""
+        },
+        {"tag": "taxbracketretire",
+         "patterns": ["How will my tax bracket be affected after I retire?", "What happens to my tax bracket when I retire?", "Will my tax bracket be lowered when I retire?", "tax bracket retire"],
+         "responses": ["Most people assume that they will be in a lower tax bracket after retirement because they will have less income. While it's not usually the case that a person or married couple would be in a higher tax bracket after retirement, it is possible that the tax bracket would be the same as before retirement."],
+         "context_set": ""
+        },
+        {"tag": "ageearlyretire",
+         "patterns": ["What age is considered early retirement?", "age considered early retirement", "age early retirement", "early retirement age"],
+         "responses": ["Retirement before the age of 62 is usually considered early retirement."],
+         "context_set": ""
+        },
+        {"tag": "earlytoplanretire",
+         "patterns": ["Is it possible to start retirement planning too early?", "Is it too early to start retirement planning?", "When should I start retirement planning?", "Should I start retirement planning now?"],
+         "responses": ["It is never too early to start planning – and saving – for retirement."],
+         "context_set": ""
+        },
+        {"tag": "penaltyealrywithdrawalforhome",
+         "patterns": ["What are the penalties for withdrawing retirement funds early to buy first home?", "penalties of early withdrawal from retirement fund to buy first home", "Is there a penalty for early withdrawal from retirement funds to buy my first home?"],
+         "responses": ["Provided the borrower meets current qualifications established by the Internal Revenue Service, there is no penalty for taking an early distribution to buy a first home. The distribution will have to be claimed as income for the year, but will not be subject to the 10% early withdrawal penalty."],
+         "context_set": ""
+        },
+        {"tag": "monthlysavingretirement",
+         "patterns": ["How much should I be saving each month for retirement?", "monthly saving for retirement", "amount to save each month for retirement", "How much should I save monthly for retirement?"],
+         "responses": ["If you contribute to an employer-sponsored retirement savings plan such as a 401(k) or 403(b) plan, it's a good idea to contribute at least as much as your employer's matching contribution. After that, you should either contribute to a traditional or Roth IRA to save as much money as possible each month."],
+         "context_set": ""
+        },
+        {"tag": "smallbusinessretireplan",
+         "patterns": ["What retirement plans can a small business reasonably afford?", "retirment plan affordable for small business", "I am the owner of a small business. What retirement plans can I afford?"],
+         "responses": ["The low cost of set up, administration, and compliance make SEP and SIMPLE IRA plans ideal for small businesses."],
+         "context_set": ""
+        },
+        {"tag": "studentloanorretire",
+         "patterns": ["Should I pay off student loans or start a retirement account?", "pay off student loan or start retirement account", "pay off student loan or start funding my retirement"],
+         "responses": ["Take advantage of an employer-sponsored retirement plan if your employer offers it even if you have student loans. If your employer doesn't offer a plan, it's best to pay down as much debt as possible as quickly as possible. If, however, your student loans are at a very low rate of interest, you should consider contributing to a traditional or Roth IRA while paying off the loans."],
+         "context_set": ""
+        },
+        {"tag": "bestinvestretire",
+         "patterns": ["What is the best way to invest retirement money?", "best way to invest retirement money", "How should I invest my retirement money?", "invest retirement money"],
+         "responses": ["While specific circumstances may be different, generally, those between 20 and 40 should have up to 90% of their IRA accounts in stocks and 10% in bonds. Between the ages of 40 and 50, the allocation changes to 80% stocks and 20% bonds. Between 50 and 60, 65% should be in stocks and 35% in bonds. Between the ages of 60 and 70, stocks should make up 55% of the account and bonds 45%. After retirement, the account should be comprised of 50% stocks and 50% bonds."],
+         "context_set": ""
+        },
+        {"tag": "retirementpensiontax",
+         "patterns": ["Is a retirement pension taxable?", "Can my retirement pension be taxed?", "Can the government tax my retirement pension?", "I want to know if my retirement pension is taxable."],
+         "responses": ["If the pension or annuity was purchased with after-tax dollars, the distributions are only partially taxable."],
+         "context_set": ""
+        },
+        {"tag": "outofbizzretirement",
+         "patterns": ["What happens to my retirement account or pension if my employer goes out of business?", "What happens to my retirement account if my employer goes out of business?", "What happens to my retirement pension if my employer goes out of business", "My employer went out of business. What happens to my retirement account?", "My employer went out of business. What happens to my retirement pension?"],
+         "responses": ["The federal government protects the assets of employer-sponsored retirement plans. The Employee Retirement Security Act (ERISA) requires that plan assets be held in a trust account that is separate and apart from the employer's other accounts."],
+         "context_set": ""
+        },
+        {"tag": "borrowagainstretirebuyhome",
+         "patterns": ["Is it smart to borrow against my retirement account to buy a first home?", "Should I borrow against my retirement account to buy my first home?", "I want to buy my first home. Should I borrow against my retirement account to fund this?"],
+         "responses": ["While each borrower's situation will be unique, some may find that the only reasonably low-cost loan available to them is a loan against a retirement account. Keep in mind that the money must be paid back according to schedule or penalties will be incurred. Further, if the home should go into foreclosure, the borrower will have lost all of the money used to buy the house."],
+         "context_set": ""
+        },
+        {"tag": "borrowagainstretirestartbizz",
+         "patterns": ["Is it smart to borrow against my retirement account to start a business?", "Should I borrow against my retirement account to buy start a business?", "I want to start a business. Should I borrow against my retirement account to fund this?"],
+         "responses": ["No. It is not a good idea to borrow against a retirement account to start a business. Programs such as the Small Business Association are available to guarantee loans in order to help entrepreneurs secure financing."],
+         "context_set": ""
+        },
+        {"tag": "automaticspousebeneficiary",
+         "patterns": ["Is a spouse automatically the beneficiary of a retirement account owned by the other spouse?", "Is my spouse automatically the benificiary of my retirement account?", "If I die, will my spouse automatically inherit all my retirement accounts?", "spouse automatic beneficiary of retirement accounts"],
+         "responses": ["Federal law has established that a spouse must specifically give up the right to inherit the retirement accounts of the other spouse."],
+         "context_set": ""
+        },
+        {"tag": "avghealthinsureretire",
+         "patterns": ["What is the average cost of heath insurance for a retiree?", "average cost of heath insurance for a retiree", "I am a retiree. What is the average health insurance cost?"],
+         "responses": ["Retirees under the age of 65 who are not yet eligible for Medicare could pay as much as $6,000 to $7,000 per year for health insurance. The amount will vary based on a number of factors, such as the state the retiree lives in, whether or not there are any pre-existing conditions, and if an employer-based health plan is covering any of the cost. Medicare is available after age 65, but many retirees will elect to purchase Medigap policies in order to obtain more complete coverage."],
+         "context_set": ""
+        },
+        {"tag": "agencyregulateretirement",
+         "patterns": ["What agencies regulate/insure retirement accounts?", "What agencies regulate retirement accounts?", "What agencies insure retirement accounts?", "agencies insure retirement accounts", "agencies regulate retirement accounts"],
+         "responses": ["The Federal Insurance Deposit Corporation (FDIC) insures IRA accounts that are held in banks. The Federal Savings and Loan Insurance Corporation (FSLIC) insures IRA accounts at savings and loans. The National Credit Union Administration (NCUA) insures IRA accounts at credit unions, and the Securities Investor Protection Corporation (SIPC) insures brokerage and mutual fund accounts."],
+         "context_set": ""
+        },
+        {"tag": "agesocialsecurity",
+         "patterns": ["At what age can I claim social security benefits?", "age to claim social security benefits", "When can I claim social security benefits", "Tell me what age I can claim social security benefits"],
+         "responses": ["Provided you have enough credits to claim benefits, the earliest you can begin receiving social security payments is age 62. If you were born in 1937 or before, you are eligible for full benefits at age 65. If you were born in 1960 or later, you are eligible for full benefits at age 67."],
+         "context_set": ""
+        },
+        {"tag": "earlysocialsecurity",
+         "patterns": ["Can I claim social security benefits early?", "claim social security benefits early", "Is there any way to claim social security benefits early?"],
+         "responses": ["Generally, no, but you can claim social security disability benefits if you are permanently disabled before age 62."],
+         "context_set": ""
+        },
+        {"tag": "percentagesocialsecuritycover",
+         "patterns": ["What percentage of my retirement living expenses will social security cover?", "percentage of my retirement living expenses will social security cover", "I want to know what percentage of my retirement living expenses social security will cover", "Tell me what percentage of my retirement living expenses social security will cover."],
+         "responses": ["The amount of your social security payment will depend on the age at which you retire, how many credits you have accumulated, and your cost of living. Because these factors vary greatly, calculations must be made relative to each individual. It's safe to assume that Social Security won't cover more than 25% of an average cost of living."],
+         "context_set": ""
+        },
+        {"tag": "socialsecuritystillaround",
+         "patterns": ["Will social security still be around when I retire?", "Will social security still be there when I retire?", "social security still around when I retire", "Will the social security trust fund be depleted soon?"],
+         "responses": ["The social security trust fund could be depleted by 2037."],
+         "context_set": ""
+        },
+        {"tag": "calculatesocialsecuritybenefits",
+         "patterns": ["How are social security benefits calculated?", "social security benefits calculations", "I want to know how social security benefits are calculated.", "Tell me how social security benefits are calculated."],
+         "responses": ["The Social Security Administration (SSA) calculates payments based on the average indexed monthly earnings that summarizes up to 35 years of earnings. A formula is applied to the average to determine the amount of the monthly payment."],
+         "context_set": ""
+        },
+        {"tag": "howretireccountwork",
+         "patterns": ["How does a retirement account work?", "I want to know how a retirement account works?", "I want to learn how a retirement account works."],
+         "responses": ["Employer-sponsored plans and traditional IRAs are funded with pre-tax dollars. Roth IRAs are funded with after-tax dollars. The earnings on all retirement accounts grow tax-free. After distributions begin, taxes are paid on accounts that were funded with pre-tax dollars but not on accounts that were funded with after-tax dollars."],
+         "context_set": ""
+        },
+        {"tag": "unemployedretireentplan",
+         "patterns": ["What kind of retirement account can I open for myself if I don’t work?", "What kind of retirement account can I open for myself if I am unemployed?", "What retirement account can I open if I don’t work?", "What retirement account can I open if I am unemployed?", "unemployed retirement plan"],
+         "responses": ["You must have earned income to open a retirement account for yourself. If your spouse has earned income, he/she can contribute to a spousal IRA that is established in your name."],
+         "context_set": ""
+        },
+        {"tag": "bestsaveretirement",
+         "patterns": ["What is the best way to save for retirement?", "best way to save for retirement", "How should I save for retirement way?", "How do you reccomend I save for retirement?", "I want to know how I should save for retirement.", "Tell me about the best way to save for retirement."],
+         "responses": ["First, establish realistic income and expense projections. Then calculate the amount of money that needs to be saved and the return that needs to be earned in order to meet those projections. Knowing this will help determine your investment strategies."],
+         "context_set": ""
+        },
+        {"tag": "statetaxretirementacc",
+         "patterns": ["Do some states tax retirement accounts more than others?", "Do all states tax retirement accounts the same?", "Are there states that do not tax retirement accounts?"],
+         "responses": ["Some states do not have a state income tax at all."],
+         "context_set": ""
+        },
+        {"tag": "liquidcashretirement",
+         "patterns": ["How much of my retirement account should be liquid cash", "Should some of my retirement account be in liquid cash?", "Do you reccomend that I have some of my retirement account in liquid cash?"],
+         "responses": ["It's a good idea to have free cash in your IRA or 401k to take advantage of market downturns. Smart investors commonly have 25% or more of their portfolio in cash. Many retirement accounts offer money market funds that can hold this cash temporarily and earn enough interest to offset inflation."],
+         "context_set": ""
+        },
+        {"tag": "teacherreitreplan",
+         "patterns": ["What retirement accounts are best for teachers.", "What retirement plans are best for teachers.", "I am a teacher. What retirement plan is best for me?", "teacher retirement plan", "retirement plan for teachers", "Tell me about the best retirement plan for teachers."],
+         "responses": ["Teachers and public employees often have access to 403(b) and 457 retirement savings accounts. In addition, teachers can always contribute to their own traditional or Roth IRA accounts provided they meet the income and employer-sponsored retirement plan requirements."],
+         "context_set": ""
+        },
+        {"tag": "goldinretireacc",
+         "patterns": ["Can I buy gold inside a retirement account?", "buy gold in retirement account", "buy gold in retirement plan", "Can I buy gold inside a retirement account?", "purchase gold in retirement account"],
+         "responses": ["You can own actual gold in a retirement account. You can also buy mutual funds and exchange-traded funds (ETFs) that hold gold and companies that deal with gold, such as mining companies."],
+         "context_set": ""
+        },
+        {"tag": "militaryretireplan",
+         "patterns": ["What retirement accounts are best for those in military.", "What retirement plans are best for those in military.", "I am in the military. What retirement plan is best for me?", "military retirement plan", "retirement plan for military", "Tell me about the best retirement plan for people in military."],
+         "responses": ["Military personnel can contribute to a Thrift Savings Plan (TSP) along with either a traditional or Roth IRA."],
+         "context_set": ""
+        },
+        {"tag": "garnishretirementacc",
+         "patterns": ["Can a collection agency garnish my retirement account?", "Is a collection agency allowed to garnish my retirement account?", "Can my retirement account be garnished by a collection agency?", "I want to know if a collection agency can garnish my retirement account?"],
+         "responses": ["Depending on the state you live in, your retirement accounts may not be protected from creditors."],
+         "context_set": ""
+        },
+        {"tag": "ageearlyretire",
+         "patterns": ["What age is considered early retirement?", "age considered early retirement", "age early retirement", "early retirement early age"],
+         "responses": ["Retirement before the age of 62 is usually considered early retirement."],
+         "context_set": ""
+        },
+        {"tag": "annuityretirementacc",
+         "patterns": ["Should I keep annuities inside a retirement account?", "Do you reccomend keeping annuities inside a retirement account?", "Does it make sense to keep annuities inside a retirement account?"],
+         "responses": ["Earnings on an annuity grow tax-deferred regardless of whether it is part of a retirement account. So in most cases, no, it doesn't make sense to keep an annuity in a retirement account."],
+         "context_set": ""
+        },
+        {"tag": "financerealestateretireacc",
+         "patterns": ["Can I use my retirement account to finance real estate?", "Am I allowed to use my retirement account to finance real estate?", "Am I permitted to use my retirement account to finance real estate?", "use my retirement account to finance real estate"],
+         "responses": ["You can borrow from a retirement account or take an early distribution to buy, build, or rebuild a first home, but this doesn't apply to commercial real estate."],
+         "context_set": ""
+        },
+        {"tag": "interestrateretirementacc",
+         "patterns": ["What interest rate can I expect in my retirement account?", "interest rate on my retirement account", "I want to know the interest rate on my retirement account."],
+         "responses": ["It depends on the types of investments you have. Historically, bonds yield 4-6% while equities yield 8-12%."],
+         "context_set": ""
+        },
+        {"tag": "capitalgainstaxretirementacc",
+         "patterns": ["Will I pay capital gains tax in a retirement account if I sell stock?", "capital gains tax on retirement account if I sell stock", "I want to know if I will pay capital gains tax in a retirement account if I sell stock."],
+         "responses": ["If the stock is sold within a tax-qualified account you will not pay capital gains when you sell it. This is one of the greatest benefits of 401(k)s and IRAs."],
+         "context_set": ""
+        },
+        {"tag": "transferretireacc",
+         "patterns": ["How do I transfer money from one retirement account to another?", "transfer money from one retirement account to another", "I want to know how to transfer money from one retirement account to another"],
+         "responses": ["Transferring money from one tax-qualified account to another is called a rollover. You can transfer money via a direct rollover, in which the money is transferred directly from one custodian to another. Or, you can transfer the money via an indirect rollover in which you receive the distribution and establish the new account yourself."],
+         "context_set": ""
+        },
+        {"tag": "penaltyrainydayretireacc",
+         "patterns": ["What are the penalties for tapping into my retirement accounts for a rainy day?", "penalties for tapping into my retirement accounts for a rainy day", "What happens if I tap into my retirement accounts on a rainy day?"],
+         "responses": ["If you take a distribution from a tax-qualified account prior to age 59 ½, you will pay a 10% penalty on the distribution. You will also have to claim the distribution as income for the year."],
+         "context_set": ""
+        },
+        {"tag": "retirementacclowerincome",
+         "patterns": ["Will putting money into a retirement account lower my adjusted gross income?", "Will my adjusted gross income be lower if I put my money into a retirement account?", "Can I lower my adjusted gross income by putting money into a retirement account."],
+         "responses": ["Contributing to a pre-tax employer-sponsored account or a traditional IRA will reduce your adjusted gross income."],
+         "context_set": ""
+        },
+        {"tag": "spousesameretirementacc",
+         "patterns": ["Can my spouse and I both contribute to the same retirement account?", "Can my spouse contribute to the same retirement account as me?", "Can I contribute to the same retirement account as my spouse?"],
+         "responses": ["No. You must each establish a separate account."],
+         "context_set": ""
+        },
+        {"tag": "addnewwifekidsafterretire",
+         "patterns": ["If I get married or acquire new dependent children after I retire, can I add them to my medical and dental coverage?", "I want to know if I get married or acquire new dependent children after I retire, can I add them to my medical and dental coverage", "Can I add new wife or new dependent kids to my medical and dental coverage after I retire?", "If I get married or acquire new dependent children after I retire, can I add them to my medical coverage?", "If I get married or acquire new dependent children after I retire, can I add them to my dental coverage?"],
+         "responses": ["No. Newly acquired dependents are not eligible to be added to your coverage as a retiree."],
+         "context_set": ""
+        },
+        {"tag": "reqsforcsrp",
+         "patterns": ["What are the requirements to retire on a Civil Service Retirement Plan?", "requirements to retire on a Civil Service Retirement Plan", "I want to know the requirements to retire on a Civil Service Retirement Plan", "Tell me about the requirements to retire on a Civil Service Retirement Plan"],
+         "responses": ["You must be 55 years with 30 years of service, 60 years with 20 years of service, or 62 years with 5 years of service."],
+         "context_set": ""
+        },
+        {"tag": "reqsfortrp",
+         "patterns": ["What are the requirements to retire on a Teachers’ Retirement Plan?", "requirements to retire on a Teachers’ Retirement Plan", "I want to know the requirements to retire on a Teachers’ Retirement Plan", "Tell me about the requirements to retire on a Teachers’ Retirement Plan"],
+         "responses": ["You must be 55 years with 30 years of service, 60 years with 20 years of service, or 62 years with 5 years of service."],
+         "context_set": ""
+        },
+        {"tag": "signup403b",
+         "patterns": ["How can I sign up for a 403(b) Tax Sheltered Annuity?", "sign up for a 403(b) Tax Sheltered Annuity", "sign up for a 403b Tax Sheltered Annuity", "sign up for a 403 b Tax Sheltered Annuity", "sign up for a 403 b", "sign up for a 403b", "sign up for a 403(b)", "I want to sign up for a 403(b) Tax Sheltered Annuity", "Tell me how to sign up for a 403(b) Tax Sheltered Annuity"],
+         "responses": ["To enroll in the 403(b) plan, you must first sign up for an account with an approved 403(b) vendor. The vendor will communicate your plan startup information to Employee Services, and your authorized payroll contributions will begin as you have elected."],
+         "context_set": ""
+        },
+        {"tag": "contributeira",
+         "patterns": ["How much can I contribute to an IRA?", "contribution limit IRA", "What is the contribution limit for an IRA?"],
+         "responses": ["For 2020, your total contributions to all of your traditional and Roth IRAs cannot be more than: $6,000 ($7,000 if you're age 50 or older), or your taxable compensation for the year, if your compensation was less than this dollar limit."],
+         "context_set": ""
+        },
+        {"tag": "taxdeductibleira",
+         "patterns": ["Is my IRA contribution deductible on my tax return?", "IRA contribution deductible on my tax return", "Is my IRA contribution tax deductible?"],
+         "responses": ["If neither you nor your spouse is covered by a retirement plan at work, your deduction is allowed in full. For contributions to a traditional IRA, the amount you can deduct may be limited if you or your spouse is covered by a retirement plan at work and your income exceeds certain levels."],
+         "context_set": ""
+        },
+        {"tag": "contribirawithworkrp",
+         "patterns": ["Can I contribute to a traditional IRA if I’m covered by a retirement plan at work?", "Can I still contribute to a traditional IRA if I’m covered by a retirement plan at work?", "If i am covered by a retirement plan, can I still contribute to a traditional IRA?"],
+         "responses": ["Yes, you can contribute to a traditional IRA even if you participate in an employer-sponsored retirement plan (including a SEP or SIMPLE IRA plan)."],
+         "context_set": ""
+        },
+        {"tag": "contribrothirawithworkrp",
+         "patterns": ["Can I contribute to a ROTH IRA if I’m covered by a retirement plan at work?", "Can I still contribute to a ROTH IRA if I’m covered by a retirement plan at work?", "If i am covered by a retirement plan, can I still contribute to a ROTH IRA?"],
+         "responses": ["Yes, you can contribute to a ROTH IRA even if you participate in an employer-sponsored retirement plan (including a SEP or SIMPLE IRA plan)."],
+         "context_set": ""
+        },
+        {"tag": "contribspouseretireplan",
+         "patterns": ["How much can I contribute to an IRA that I set up for my spouse?", "contribution limit to an IRA that I set up for my spouse", "I want to know how much I can contribute to an IRA that I set up for my spouse", "Tell me how much I can contribute to an IRA that I set up for my spouse."],
+         "responses": ["If you file a joint return and have taxable compensation, you and your spouse can both contribute to your own separate IRAs. Your total contributions to both your IRA and your spouse’s IRA may not exceed your joint taxable income or the annual contribution limit on IRAs times two, whichever is less. It doesn't matter which spouse earned the income."],
+         "context_set": ""
+        },
+        {"tag": "deductpenalty",
+         "patterns": ["Can I deduct the 10% additional early withdrawal tax as a penalty on early withdrawal of savings?", "i want to know if I can deduct the 10% additional early withdrawal tax as a penalty on early withdrawal of savings.", "Tell me if I can deduct the 10% additional early withdrawal tax as a penalty on early withdrawal of savings?"],
+         "responses": ["No, the additional 10% tax on early distributions from qualified retirement plans does not qualify as a penalty for withdrawal of savings."],
+         "context_set": ""
+        },
+        {"tag": "rmd",
+         "patterns": ["What is a required minimum distribution?", "required minimum distribution", "rmd", "What is an rmd?", "I want to know what a required mimimum distribution is.", "I want to know what an rmd is."],
+         "responses": ["A required minimum distribution (RMD) is the amount of money that must be withdrawn from a traditional IRA, SEP, or SIMPLE individual retirement account (IRA) by owners and qualified retirement plan participants of retirement age."],
+         "context_set": ""
+        },
+        {"tag": "morethanrmd",
+         "patterns": ["Can a retiree take more than the RMD?", "Can a retiree take more than the required minimum distribution.", "When I am retired, can I take more than the RMD?", "When I am retired, can I take more than the required minimum distribution?", "I want to know if I can take more than the required minimum distribution when I am retired.", "I want to know if I can take more than the RMD when I am retired."],
+         "responses": ["Yes, a retiree can take more than the required minimum distribution."],
+         "context_set": ""
+        },
+        {"tag": "irapreposttax",
+         "patterns": ["Are my contributions to my traditional IRA made with pre tax funds or post tax funds?", "contributions to my traditional IRA made with pre tax funds or post tax funds?", "I want to know if my contributions to my traditional IRA are made with pre tax funds or post tax funds"],
+         "responses": ["With a traditional IRA, your contributions are made with pre tax funds."],
+         "context_set": ""
+        },
+        {"tag": "irawithdrawalstaxed",
+         "patterns": ["Are my withdrawals from my traditional IRA taxed?", "withdrawals from my traditional IRA taxed", "are traditional IRA withdrawals taxed?"],
+         "responses": ["Yes, your withdrawals from your traditional IRA are taxed."],
+         "context_set": ""
+        },
+        {"tag": "rothirapreposttax",
+         "patterns": ["Are my contributions to my ROTH IRA made with pre tax funds or post tax funds?", "contributions to my ROTH IRA made with pre tax funds or post tax funds?", "I want to know if my contributions to my ROTH IRA are made with pre tax funds or post tax funds"],
+         "responses": ["With a ROTH IRA, your contributions are made with post tax funds."],
+         "context_set": ""
+        },
+        {"tag": "rothirawithdrawalstaxed",
+         "patterns": ["Are my withdrawals from my ROTH IRA taxed?", "withdrawals from my ROTH IRA taxed", "are ROTH IRA withdrawals taxed?"],
+         "responses": ["No, your withdrawals from your ROTH IRA are not taxed.."],
+         "context_set": ""
+        },
+        {"tag": "rmdsrothira",
+         "patterns": ["Are there RMDs for ROTH IRAs?", "Do ROTH IRAs have RMDs?", "Are there required mimimum distributions for ROTH IRAs?", "Do ROTH IRAs have required minimum distributions?", "I want know if there are RMDs for a ROTH IRA.", "I want know if there are required minimum distributions for a ROTH IRA."],
+         "responses": ["There are no RMDs for a ROTH IRA."],
+         "context_set": ""
+        },
+        {"tag": "convertrothiratoira",
+         "patterns": ["After I convert my IRA to ROTH IRA, can I convert it back?", "After I convert my IRA to ROTH IRA, am I allowed to convert it back?", "After I convert my IRA to ROTH IRA, am I permitted to convert it back?"],
+         "responses": ["The Tax Cuts and Jobs Act of 2017 eliminated the ability to recharacterize (revert) conversions beginning with taxable year 2018."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitsrothira",
+         "patterns": ["What are the ROTH IRA contribution limits?", "ROTH IRA contribution limits", "contribution limits for ROTH IRA", "What are the contribution limits for the ROTH IRA?", "I want to know the contribution limits for the ROTH IRA."],
+         "responses": ["In 2020, the annual contribution limit for people under 50 is $6,000 and the annual contribution limit for people over 50 is $7,000."],
+         "context_set": ""
+        },
+        {"tag": "incomecutoffsinglerothira",
+         "patterns": ["At what income level is a single individual no longer eligible to contribute to ROTH IRA?", "Is there any income restriction for a single's eligibility for ROTH IRA?.", "I  want to know what income level disqualifies single individuals from being eligible for ROTH IRA."],
+         "responses": ["Single individuals who make more than $139,000 are not eligible to contribute to ROTH IRA."],
+         "context_set": ""
+        },
+        {"tag": "incomecutoffmarriedrothira",
+         "patterns": ["At what income level is a married couple filing joint returns no longer eligible to contribute to ROTH IRA?", "Is there any income restriction for a married couple's eligibility for ROTH IRA?.", "I  want to know what income level disqualifies married couples from being eligible for ROTH IRA."],
+         "responses": ["Married couples who make more than $206,000 are not eligible to contribute to ROTH IRA."],
+         "context_set": ""
+        },
+        {"tag": "fiveyrrothira",
+         "patterns": ["What is the 5 year rule for ROTH IRA?", "5 year rule for ROTH IRA", "I want to know the 5 year rule for ROTH IRA."],
+         "responses": ["The general idea of the rule is that you get full tax-free treatment of any withdrawals from a Roth IRA once you've held the account for five years. The five-year period starts on the first day of the tax year for which you made the Roth contribution"],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitsrothira",
+         "patterns": ["What are the withdrawal limits on ROTH IRA?", "withdrawal limits on ROTH IRA", "withdrawal limits for ROTH IRA", "What are the withdrawal limits for the ROTH IRA?", "I want to know the withdrawal limits for the ROTH IRA."],
+         "responses": ["You can withdraw your Roth IRA contributions at any time, for any reason, with no tax or penalties. Withdrawal on earnings may be subject to income tax and a 10% penalty, depending on your age and how long you have held the account."],
+         "context_set": ""
+        },
+        {"tag": "contriblimits401k",
+         "patterns": ["What are the 401k contribution limits?", "401k contribution limits", "contribution limits for 401k", "What are the contribution limits for the 401k Plan?", "I want to know the contribution limits for the 401k Plan."],
+         "responses": ["The contribution limits for employees who participate in 401k is $19,500. And the catch-up contribution limit for employees over 50 who participate in 401k is $6,500."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimits401k",
+         "patterns": ["What are the withdrawal limits on 401k?", "withdrawal limits on 401k", "withdrawal limits for 401k", "What are the withdrawal limits for 401k?", "I want to know the withdrawal limits for 401k."],
+         "responses": ["You can make a 401(k) withdrawal in a lump sum but in most cases, if you do and are younger than 59½, you'll pay a 10% early withdrawal penalty in addition to taxes."],
+         "context_set": ""
+        },
+        {"tag": "contriblimits403b",
+         "patterns": ["What are the 403b contribution limits?", "403b contribution limits", "contribution limits for 403b", "What are the contribution limits for the 403b Plan?", "I want to know the contribution limits for the 403b Plan."],
+         "responses": ["The contribution limits for employees who participate in 403b is $19,500. And the catch-up contribution limit for employees over 50 who participate in 403b is $6,500."],
+         "context_set": ""
+        },
+        {"tag": "withdrawlimits403b",
+         "patterns": ["What are the withdrawal limits on 403b?", "withdrawal limits on 403b", "withdrawal limits for 403b", "What are the withdrawal limits for 403b?", "I want to know the withdrawal limits for 403b."],
+         "responses": ["After you are 59 ½, you can withdraw as much as you want from your 403b without penalty without penalty, but you must withdraw at least a minimum amount after you turn 70 ½."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitssimpleira",
+         "patterns": ["What are the SIMPLE IRA contribution limits?", "SIMPLE IRA contribution limits", "contribution limits for SIMPLE IRA", "What are the contribution limits for the SIMPLE IRA?", "I want to know the contribution limits for the SIMPLE IRA."],
+         "responses": ["An employee cannot contribute more than $13,500 to a SIMPLE IRA."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitssimpleira",
+         "patterns": ["What are the withdrawal limits on SIMPLE IRA?", "withdrawal limits on SIMPLE IRA", "withdrawal limits for SIMPLE IRA", "What are the withdrawal limits for SIMPLE IRA?", "I want to know the withdrawal limits for SIMPLE IRA."],
+         "responses": ["Generally, you have to pay income tax on any amount you withdraw from your SIMPLE IRA. You may also have to pay an additional tax of 10% or 25% on the amount you withdraw unless you are at least age 59½ or you qualify for another exception."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitssep",
+         "patterns": ["What are the contribution limits an employer can make to an employee's SEP?", "contribution limits an employer can make to an employee's SEP", "I want to know what are the contribution limits an employer can make to an employee's SEP."],
+         "responses": ["An employer’s contributions to an employee’s SEP IRA cannot exceed the lesser of 25% of employee’s compensation or $57,000."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitssep",
+         "patterns": ["What are the withdrawal limits for an SEP?", "withdrawal limits for an SEP", "I want to know the withdrawal limits for an SEP."],
+         "responses": ["Participants can withdraw funds from their SEP IRA at any time without being required to show evidence of financial hardship. However, withdrawals taken before the age of 59 ½ –referred to as early distributions – may be subject to a 10% tax penalty in addition to the applicable income tax liability."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitssarsep",
+         "patterns": ["What are the contribution limits an employer can make to an employee's SARSEP?", "contribution limits an employer can make to an employee's SARSEP", "I want to know the contribution limits an employer can make to an employee's SARSEP."],
+         "responses": ["The annual limit is $19,500 in 2020, while a catch up provision allows those who are age 50 and older to contribute an additional $6,000. Employers may make SEP contributions that cannot exceed the lesser of 25% of the employee's compensation or $56,000 in 2019 and $57,000 in 2020."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitssarsep",
+         "patterns": ["What are the withdrawal limits for a SARSEP?", "withdrawal limits for a SARSEP", "I want to know the withdrawal limits for a SARSEP."],
+         "responses": ["SARSEP contributions and earnings can be withdrawn at any time, subject to the general limitations imposed on traditional IRAs. A withdrawal is taxable in the year received. If an employee makes a withdrawal before age 59½, generally a 10% additional tax applies."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitspayrolldedira",
+         "patterns": ["What are the contribution limits for Payroll Deduction IRA?", "Payroll Deduction IRA contribution limits", "contribution limits for Payroll Deduction IRA", "What are the contribution limits for the Payroll Deduction IRA?", "I want to know the contribution limits for the Payroll Deduction IRA."],
+         "responses": ["In 2020, the annual contribution limit for people under 50 is $6,000 and the annual contribution limit for people over 50 is $7,000."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitspayrolldedira",
+         "patterns": ["What are the withdrawal limits for a Payroll Deduction IRA?", "withdrawal limits for a Payroll Deduction IRA", "I want to know the withdrawal limits for a Payroll Deduction IRA."],
+         "responses": ["In-Service Withdrawals are subject to income tax and 10% additional tax if under age 59 ½."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitsprofitsharingplan",
+         "patterns": ["What are the contribution limits for Profit Sharing Plans?", "Profit Sharing Plans contribution limits", "contribution limits for Profit Sharing Plans", "What are the contribution limits for the Profit Sharing Plans?", "I want to know the contribution limits for Profit Sharing Plans."],
+         "responses": ["You may contribute the lesser of 25% of compensation or $57,000."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitsprofitsharingplan",
+         "patterns": ["What are the withdrawal limits for a Profit Sharing Plans?", "withdrawal limits for a Profit Sharing Plans", "I want to know the withdrawal limits for Profit Sharing Plans."],
+         "responses": ["In-Service Withdrawals are subject to possible 10% additional tax if under age 59 ½ and no other exception applies."],
+         "context_set": ""
+        },
+        {"tag": "benefitlimitsdefinedbenefitplan",
+         "patterns": ["What are the benefit limits for Defined Benefit Plan?", "benefit limits for Defined Benefit Plan", "I want to know the benefit limits for Defined Benefit Plan."],
+         "responses": ["In general, the actual benefit for a participant under a Defined Benefit Plan cannot exceed the lesser of 100% of the participant's average compensation for his or her highest 3 consecutive calendar years, or $230,000."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimitsdefinedbenefitplan",
+         "patterns": ["What are the withdrawal limits of Defined Benefits Plans?", "withdrawal limits of Defined Benefits Plans", "I want to know the withdrawal limits of Defined Benefits Plans."],
+         "responses": ["Benefits can be distributed as fixed-monthly payments like an annuity or in one lump-sum payment."],
+         "context_set": ""
+        },
+        {"tag": "contriblimitsmoneypurchaseplan",
+         "patterns": ["What are the contribution limits for Money Purchase Plans", "contribution limits for Money Purchase Plans", "I want to know the contribution limits for Money Purchase Plans"],
+         "responses": ["The contribution limit to a Money Purchase Plan is the lesser of 25% compensation or $57,000."],
+         "context_set": ""
+        },
+        {"tag": "inservicewithdrawalmoneypurchaseplan",
+         "patterns": ["Are in-service withdrawals allowed for Money-Purchase Plans?", "Are in-service withdrawals permitted for Money-Purchase Plans?", "Am I allowed to do an in-service withdrawal on a money purchase plan?", "I want to know if I allowed to do an in-service withdrawal on a money purchase plan."],
+         "responses": ["No, in-service withdrawals are not allowed for Money-Purchase Plans."],
+         "context_set": ""
+        },
+        {"tag": "contriblimits457",
+         "patterns": ["What are the contribution limits on 457?", "contribution limits on 457", "I want to know the contribution limits on 457.", "What are the contribution limits on the 457 Plan?", "contribution limits on 457 Plan", "I want to know the contribution limits on 457 Plan."],
+         "responses": ["The contribution limits for employees who participate in 457 is $19,500. And the catch-up contribution limit for employees over 50 who participate in 457 is $6,500."],
+         "context_set": ""
+        },
+        {"tag": "withdrawalimits457",
+         "patterns": ["What are the withdrawal limits on 457?", "withdrawal limits on 457", "I want to know the withdrawal limits on 457.", "What are the withdrawal limits on the 457 Plan?", "withdrawal limits on 457 Plan", "I want to know the withdrawal limits on 457 Plan."],
+         "responses": ["Unfortunately, when you reach retirement and take your first distribution – or if you take an early distribution – you’ll immediately owe taxes on every amount you take out of the plan."],
+         "context_set": ""
+        }
+   ]
+}
